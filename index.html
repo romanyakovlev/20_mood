@@ -21,12 +21,17 @@
     $(function() {
       var data = JSON.parse($("#quotes_json").html());
       var random_elem = data[Math.floor(Math.random()*data.length)];
+      $("#phrase").text(random_elem["phrase"]);
+      if(random_elem["signature"] != undefined){
+         $("#signature").text(random_elem["phrase"]);
+      }
       alert(random_elem);
     })
   </script>
 </head>
 <body>
 
-  <p> kek</p>
+  <p id="phrase"></p>
+  <p id="signature"></p>
 </body>
 </html>
