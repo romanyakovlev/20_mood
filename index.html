@@ -18,10 +18,9 @@
     ]
   </script>
   <script>
-    var data = JSON.parse($("#quotes_json").html());
-    var random_elem = data[Math.floor(Math.random()*data.length)];
-    
     $(function() {
+      var data = JSON.parse($("#quotes_json").html());
+      var random_elem = data[Math.floor(Math.random()*data.length)];
       alert(random_elem);
     })
   </script>
