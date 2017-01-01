@@ -43,16 +43,7 @@
         }
       ]
     </script>
-    <script>
-      $(function() {
-        var data = JSON.parse($("#quotes_json").html());
-        var random_elem = data[Math.floor(Math.random()*data.length)];
-        $("#phrase").text(random_elem["phrase"]);
-        if(random_elem["signature"] != undefined){
-           $("#signature").text(random_elem["signature"]);
-        }
-      })
-  </script>
+
   </head>
 
   <body>
@@ -82,5 +73,15 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+        <script>
+          $(function() {
+            var data = JSON.parse($("#quotes_json").html());
+            var random_elem = data[Math.floor(Math.random()*data.length)];
+            $("#phrase").text(random_elem["phrase"]);
+            if(random_elem["signature"] != undefined){
+               $("#signature").text(random_elem["signature"]);
+            }
+          })
+      </script>
   </body>
 </html>
