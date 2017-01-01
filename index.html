@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Настроение</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script id="quotes_json" type="application/json">
    
       {
@@ -19,6 +20,13 @@
   </script>
 </head>
 <body>
+  <script>
+    var data = JSON.parse($("#data").html());
+    $(function() {
+    // read JSON
+    alert("the json is:")
+    })
+  </script>
   <p> kek</p>
 </body>
 </html>
