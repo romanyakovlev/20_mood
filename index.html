@@ -23,7 +23,7 @@
       var random_elem = data[Math.floor(Math.random()*data.length)];
       $("#phrase").text(random_elem["phrase"]);
       if(random_elem["signature"] != undefined){
-         $("#signature").text(random_elem["phrase"]);
+         $("#signature").text(random_elem["signature"]);
       }
       alert(random_elem);
     })
