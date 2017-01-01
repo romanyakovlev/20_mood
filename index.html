@@ -19,9 +19,10 @@
   </script>
   <script>
     var data = JSON.parse($("#quotes_json").html());
+    var random_elem = data[Math.floor(Math.random()*data.length)];
+    
     $(function() {
-    // read JSON
-    alert(data);
+      alert(random_elem);
     })
   </script>
 </head>
